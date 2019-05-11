@@ -1,0 +1,31 @@
+﻿@using SportsStore.Domain.Entities
+@using SportsStore.WebUI.HtmlHelpers
+
+@model SportsStore.WebUI.Models.ProductsListViewModel
+
+@*I have changed the @model directive to tell Razor that I am now working with a different data type*@
+@{
+    ViewBag.Title = "Products";
+}
+@foreach (var p in Model.Products)
+{
+
+    @Html.Partial("ProductSummary", p)
+
+
+    @*<div>
+            <div class="well">
+                <h3>
+                    <strong>@p.Name</strong>
+                    <span class="pull-right label label-primary">@p.Price.ToString("c")</span>
+                </h3>
+                <span class="lead"> @p.Description</span>
+            </div>
+        </div>*@
+}
+
+<div class="btn-group pull-right">
+
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x, category = Model.CurrentCategory }))
+
+</div>
