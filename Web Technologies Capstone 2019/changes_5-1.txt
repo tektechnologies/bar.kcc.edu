@@ -1,0 +1,27 @@
+- renamed stuff to make automated content work better
+
+
+
+	- in images folder: app_design.jpg -> application_design.jpg
+	
+	
+	- in images folder: clientrel.jpg -> client_relations.jpg
+	
+	
+	- in phpmyadmin database -> careercards table -> images: app_design.jpg -> application_design.jpg
+	
+	
+	- in phpmyadmin database: appdesign table -> applicationdesign
+	
+	
+	- in phpmyadmin database: changed description- -> jobdescription for 2 tables, because they were inconsistent with other tables
+	
+	
+	- I believe it was clientrelations and leadership, not 100% sure though
+	
+	
+	
+	
+	
+		
+- added banners to images folder for each category, used in careers.php
